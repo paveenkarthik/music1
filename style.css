@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:"poppins",sans-serif;
+    
+}
+:root{
+--primary-color:#c6c3c3;
+--second-colour:white;
+--black-color: #000000
+}
+body{
+
+    background-color: lightblue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+
+    text-decoration: underline;
+    color: rgb(131, 32, 207);
+    
+    border-radius: 30px;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+
+}
+.login-box{
+    position: relative;
+    width: 450px;
+    backdrop-filter:blur(25px);
+    border: 2px solid #c6c3c3;
+    border-radius: 15px;
+    padding: 7.5rem 2.5rem 4rem 2.5rem; 
+    color: black;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+.login-head{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c6c3c3;
+    width: 140px;
+    height: 70px;
+    border-radius: 0px 0px 20px 20px;
+}
+.input-box::after
+{
+    content:" ";
+    font: hidden;
+}
+.login-head span{
+      font-size: 35px;
+      color:black ;
+}
+.login-head::before
+{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: -30px;
+    border-top-right-radius: 50%;
+    background: transparent;
+    box-shadow: 15px 0 0 0 #c6c3c3;
+}
+.login-head::after
+{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: -30px;
+    border-top-left-radius: 50%;
+    background: transparent;
+    box-shadow: -15px 0 0 0 #c6c3c3;
+}
+.input-box{
+    position: relative;
+    display: flex;  
+    flex-direction: column;
+    margin: 20px 0;
+}
+.input-field{
+      width: 100%;
+      height: 55px;
+      font-size: 20px;
+      background-color: transparent;
+      color: black ;
+      padding-inline: 20px 10px;
+      border: 2px solid #1e0606;
+      border-radius: 50px ;
+      outline: none;
+    
+}
+#user
+{
+    margin-bottom:10px;
+
+}
+.one{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    transition: 0.2s;
+}
+.input-field:focus~.one{
+    position: absolute;
+    top: -10px;
+    left:20px;
+    font-size: 14px;
+    background-color: #c6c3c3;
+    border-radius: 30px;
+    color:black;
+    padding: 0px 10px 0px;
+}
+.icon{
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    font-size: 20px;
+}
+.rem-pass{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.input-submit{
+    width: 100%;
+    height: 50px;
+    background-color: #ececec;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.register a{
+     font-weight: 500;
+}
+#id{
+   font-size: larger;
+    padding-left:80%;
+}
+.input-submit:hover{
+    background-color: black;
+    color: white;
+}
+input[type=checkbox]
+{
+ width:20px;   
+ height:25px;
+ color: aqua;
+}
+#two{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.remember{
+    font-size: 16px;
+}
+#sign{
+    font-size: 20px;
+}
